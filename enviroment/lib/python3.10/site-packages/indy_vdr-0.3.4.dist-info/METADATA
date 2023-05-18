@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: indy-vdr
+Version: 0.3.4
+Summary: UNKNOWN
+Home-page: https://github.com/hyperledger/indy-vdr
+Author: Hyperledger Aries Contributors
+Author-email: aries@lists.hyperledger.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6.3
+
+UNKNOWN
+
+
