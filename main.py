@@ -12,4 +12,7 @@ def hello_world():
 def create_did():
     seed = request.args.get('seed')
     did, verkey = generate_did.generate_did(seed)
-    return did, verkey
+    return jsonify(
+        did=did,
+        verkey=verkey
+    )
