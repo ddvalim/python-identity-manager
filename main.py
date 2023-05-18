@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from did import generate_did
-import asyncio
+from holder.anchor import AnchorHandle
 
 app = Flask(__name__)
 
@@ -16,3 +16,11 @@ def create_did():
         did=did,
         verkey=verkey
     )
+
+@app.route('/seed',methods=['GET'])
+def create_seed():
+    anchor = AnchorHandle()
+    return jsonify(**{
+        "seed": anchor.generate_seed(),
+        "key":anchor.generate_key(48)
+    })

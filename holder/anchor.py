@@ -508,6 +508,17 @@ class AnchorHandle:
         """
         return nacl_seed_to_did(seed)
 
+    def generate_key(self, key_lenght=48):
+        stream = os.popen(f'openssl rand -base64 {key_lenght}')
+        output = stream.read()
+        return output[:-2]
+    
+    def generate_seed(self):
+        key = self.generate_key(32)
+        stream = os.popen(f'echo "{key}" | fold -w 32 | head -n 1')
+        output = stream.read()
+        return output[:-2]
+
     async def init_cache(self):
         LOGGER.info("Init ledger cache...")
         for ledger_type in LedgerType:
