@@ -502,7 +502,7 @@ class AnchorHandle:
             )
             await self.submit_request(request, True, True)
 
-    async def seed_to_did(self, seed):
+    def seed_to_did(self, seed):
         """
         Resolve a DID and verkey from a seed
         """

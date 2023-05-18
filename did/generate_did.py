@@ -7,9 +7,9 @@ from holder import anchor
 
 logging.getLogger().setLevel(logging.ERROR)
 
-async def generate_did(seed):
+def generate_did(seed):
     TRUST_ANCHOR = anchor.AnchorHandle()
-    did, verkey, x = await TRUST_ANCHOR.seed_to_did(seed)
+    did, verkey = TRUST_ANCHOR.seed_to_did(seed)
 
     print(f"\nSeed: {seed}")
     print(f"DID: {did}")
