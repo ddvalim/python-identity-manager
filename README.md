@@ -1,8 +1,5 @@
 # python-identity-manager
 
-- ativar o ambiente virtual python (source enviroment/bin/activate)
-- executar o servidor FLASK_APP=main.py flask run
-
 <h1 align="center">💻 Sistema de Manutenção de Identidade Descentralizada 💻 </h1>
 <p align="center">🚀 Trabalho de Conclusão de Curso 🚀</p>
 <p align="center">
