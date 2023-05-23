@@ -43,6 +43,7 @@ Este projeto foi desenvolvido utilizando a linguagem de programação __Python__
 ### Executando o programa
 
 1. Em um terminal, execute o programa principal utilizando o comando `FLASK_APP=main.py flask run`.
+2. [Coleção de requests](https://drive.google.com/file/d/1MSFONUsBsXFUzO2wO_Rz5_8Q4-HUjQxw/view?usp=sharing) para teste da aplicação.
 
 ### Autora
 
