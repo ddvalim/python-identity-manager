@@ -11,7 +11,7 @@ def hello_world():
 @app.route('/did',methods=['GET'])
 def create_did():
     seed = request.args.get('seed')
-    print(seed)
+
     if seed is None:
         return jsonify(
             message="missing seed query param",
@@ -27,6 +27,7 @@ def create_did():
 @app.route('/seed',methods=['GET'])
 def create_seed():
     anchor = AnchorHandle()
+    
     return jsonify(**{
         "seed": anchor.generate_seed(),
         "key":anchor.generate_key(48)
